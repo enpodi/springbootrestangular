@@ -4,15 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CrudService } from './services/crud.service';
-import { AdminComponent } from './components/admin/admin.component'
+import { AdminComponent } from './components/admin/admin.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HttpClientModule,
     AdminComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule
   ],
   providers: [CrudService],
