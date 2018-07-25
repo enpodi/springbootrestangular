@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-//import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from '../components/admin/admin.component';
 
 const routes: Routes = [
@@ -10,7 +10,7 @@ const routes: Routes = [
 ];
 //CommonModule
 @NgModule({
-  imports: [    RouterModule.forRoot(routes)  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

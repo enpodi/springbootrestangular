@@ -3,7 +3,7 @@ import { CrudService } from '../../services/crud.service';
 
 @Component({
   selector: 'app-admin',
-  template: 'admin.component.html',
+  templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {

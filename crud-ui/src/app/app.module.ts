@@ -7,6 +7,12 @@ import { CrudService } from './services/crud.service';
 import { AdminComponent } from './components/admin/admin.component';
 import { RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  {
+    path: 'admin',
+    component: AdminComponent
+  }
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +20,8 @@ import { RouterModule, Routes } from '@angular/router';
   ],
   imports: [
     HttpClientModule,
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [CrudService],
   bootstrap: [AppComponent]
